@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>----HOME PAGE---------</h1>
+    <h1>---- {{ data.title }} ---------</h1>
     <main-banner></main-banner>
     <referenzen></referenzen>
     <vorteile></vorteile>
@@ -23,6 +23,16 @@ export default {
     Vorteile,
     Products,
     ContactBanner,
+  },
+
+  async asyncData({ $axios }) {
+    const { data } = await $axios.get('/mock-data/sample.json')
+    console.log('data-----------------', data)
+    return { data }
+  },
+
+  data() {
+    return {}
   },
 }
 </script>
