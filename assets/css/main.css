@@ -1,7 +1,5 @@
 @import url('./fonts.css');
-/* @import url('./responsive.css'); */
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  background-image: url('https://admin.m2-wunschauto.at/wp-content/uploads/2021/02/herobg.jpg');
-  background-size: contain;
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
 }
