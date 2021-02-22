@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>---- {{ data.title }} ---------</h1>
     <main-banner></main-banner>
     <referenzen></referenzen>
     <vorteile></vorteile>
