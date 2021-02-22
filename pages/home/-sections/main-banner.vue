@@ -11,8 +11,12 @@
       {{ data.subtitle }}
     </h4>
     <div class="banner-cta">
-      <app-button-primary>{{ data.button_1 }}</app-button-primary>
-      <app-button-secondary>{{ data.button_2 }}</app-button-secondary>
+      <app-button-primary :text-uppercase="true">
+        {{ data.button_1 }}
+      </app-button-primary>
+      <app-button-secondary :text-uppercase="true">
+        {{ data.button_2 }}
+      </app-button-secondary>
     </div>
   </section>
 </template>

@@ -1,11 +1,18 @@
 <template>
-  <app-button class="secondary-btn">
+  <app-button class="secondary-btn" :text-uppercase="textUppercase">
     <slot></slot>
   </app-button>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    textUppercase: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
 <style scoped>
