@@ -22,4 +22,8 @@ export default {}
 .nav-menu-item:hover {
   color: rgb(255 255 255 / 75%);
 }
+
+.nav-menu-item:last-child {
+  margin-right: 0;
+}
 </style>

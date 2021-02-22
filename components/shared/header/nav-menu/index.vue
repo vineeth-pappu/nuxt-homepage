@@ -3,6 +3,9 @@
     <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
     <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
     <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
+    <app-header-nav-menu-item>
+      <app-button-primary>Contact</app-button-primary>
+    </app-header-nav-menu-item>
   </div>
 </template>
 
