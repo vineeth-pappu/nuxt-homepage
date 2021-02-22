@@ -1,12 +1,28 @@
 <template>
   <header>
     <app-logo-monochrome></app-logo-monochrome>
-    <app-header-nav-menu></app-header-nav-menu>
+    <app-header-nav-menu
+      :page-links="data.page_links"
+      :button-text="data.button"
+    ></app-header-nav-menu>
   </header>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    data: {
+      type: Object,
+      default() {
+        return {}
+      },
+    },
+  },
+
+  data() {
+    return {}
+  },
+}
 </script>
 
 <style scoped>

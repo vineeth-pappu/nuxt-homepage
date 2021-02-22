@@ -17,6 +17,7 @@ export default {}
   text-transform: capitalize;
   color: rgb(255 255 255 / 50%);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .nav-menu-item:hover {

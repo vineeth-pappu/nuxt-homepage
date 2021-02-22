@@ -1,6 +1,6 @@
 <template>
   <div>
-    <main-banner></main-banner>
+    <main-banner :data="data.section_head"></main-banner>
     <referenzen></referenzen>
     <vorteile></vorteile>
     <products></products>
@@ -25,8 +25,8 @@ export default {
   },
 
   async asyncData({ $axios }) {
-    const { data } = await $axios.get('/mock-data/payload-shared.json')
-    console.log('data-----------------', data)
+    const { data } = await $axios.get('/mock-data/payload-home.json')
+    // console.log({ data })
     return { data }
   },
 

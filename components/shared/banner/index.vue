@@ -1,15 +1,21 @@
 <template>
   <div class="banner">
-    <img
-      src="https://admin.m2-wunschauto.at/wp-content/uploads/2021/02/herobg.jpg"
-      alt="banner"
-    />
+    <img :src="image.url" alt="banner" />
     <div class="banner-overlay"></div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    image: {
+      type: Object,
+      default() {
+        return { url: '' }
+      },
+    },
+  },
+}
 </script>
 
 <style scoped>

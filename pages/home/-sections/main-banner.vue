@@ -1,22 +1,41 @@
 <template>
   <section class="home-banner">
-    <app-banner></app-banner>
+    <app-banner :image="data.background_image"></app-banner>
     <div class="banner-logo">
       <app-logo-monochrome></app-logo-monochrome>
     </div>
-    <h1 class="banner-title">Find the car you want</h1>
+    <h1 class="banner-title">
+      {{ data.title }}
+    </h1>
     <h4 class="banner-caption">
-      M2 is your platform for a smooth car buying and selling.
+      {{ data.subtitle }}
     </h4>
     <div class="banner-cta">
-      <app-button-primary>M2 FINDES</app-button-primary>
-      <app-button-secondary>M2 advertised</app-button-secondary>
+      <app-button-primary>{{ data.button_1 }}</app-button-primary>
+      <app-button-secondary>{{ data.button_2 }}</app-button-secondary>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    data: {
+      type: Object,
+      default() {
+        return {}
+      },
+    },
+  },
+
+  data() {
+    return {}
+  },
+
+  mounted() {
+    console.log('banner', this.data)
+  },
+}
 </script>
 
 <style scoped>
