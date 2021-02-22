@@ -26,7 +26,7 @@ export default {
   },
 
   async asyncData({ $axios }) {
-    const { data } = await $axios.get('/mock-data/sample.json')
+    const { data } = await $axios.get('/mock-data/payload-shared.json')
     console.log('data-----------------', data)
     return { data }
   },
