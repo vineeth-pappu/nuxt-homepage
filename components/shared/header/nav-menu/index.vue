@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h1>Nav menu</h1>
-    <app-header-nav-menu-item></app-header-nav-menu-item>
+  <div class="nav-menu-wapper">
+    <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
+    <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
+    <app-header-nav-menu-item>LEISTUNGEN</app-header-nav-menu-item>
   </div>
 </template>
 
@@ -9,4 +10,10 @@
 export default {}
 </script>
 
-<style></style>
+<style scoped>
+.nav-menu-wapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+</style>

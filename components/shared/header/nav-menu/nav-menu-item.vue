@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Nav menu Item</h1>
-    <app-button></app-button>
+  <div class="nav-menu-item">
+    <!-- <app-button></app-button> -->
+    <slot></slot>
   </div>
 </template>
 
@@ -9,4 +9,17 @@
 export default {}
 </script>
 
-<style></style>
+<style scoped>
+.nav-menu-item {
+  padding: 0.75rem;
+  margin-right: 2.25rem;
+  font-size: 1.065rem;
+  text-transform: capitalize;
+  color: rgb(255 255 255 / 50%);
+  cursor: pointer;
+}
+
+.nav-menu-item:hover {
+  color: rgb(255 255 255 / 75%);
+}
+</style>
