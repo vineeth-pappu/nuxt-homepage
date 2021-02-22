@@ -22,5 +22,6 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  z-index: 10;
 }
 </style>
