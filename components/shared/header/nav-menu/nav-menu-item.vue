@@ -1,6 +1,5 @@
 <template>
   <div class="nav-menu-item">
-    <!-- <app-button></app-button> -->
     <slot></slot>
   </div>
 </template>
