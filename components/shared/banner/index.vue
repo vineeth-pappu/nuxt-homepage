@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <img :src="image.url" alt="banner" />
-    <div class="banner-overlay"></div>
+    <div class="banner-overlay" :style="{ background: tint }"></div>
   </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
       default() {
         return { url: '' }
       },
+    },
+    tint: {
+      type: String,
+      default: 'rgba(0, 0, 0, 0.3)',
     },
   },
 }
@@ -36,6 +40,5 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
 }
 </style>

@@ -4,7 +4,7 @@
     <referenzen></referenzen>
     <vorteile :data="data.section_vorteile"></vorteile>
     <products :data="data.section_services"></products>
-    <contact-banner></contact-banner>
+    <contact-banner :data="data.section_contact"></contact-banner>
   </div>
 </template>
 
