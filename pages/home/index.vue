@@ -2,7 +2,7 @@
   <div>
     <main-banner :data="data.section_head"></main-banner>
     <referenzen></referenzen>
-    <vorteile></vorteile>
+    <vorteile :data="data.section_vorteile"></vorteile>
     <products></products>
     <contact-banner></contact-banner>
   </div>
