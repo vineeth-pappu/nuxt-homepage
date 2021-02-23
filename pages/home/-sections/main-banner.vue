@@ -46,7 +46,7 @@ export default {
 .home-banner {
   position: relative;
   width: 100%;
-  height: 124vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
