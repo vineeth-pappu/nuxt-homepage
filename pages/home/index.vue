@@ -3,7 +3,7 @@
     <main-banner :data="data.section_head"></main-banner>
     <referenzen></referenzen>
     <vorteile :data="data.section_vorteile"></vorteile>
-    <products></products>
+    <products :data="data.section_services"></products>
     <contact-banner></contact-banner>
   </div>
 </template>
